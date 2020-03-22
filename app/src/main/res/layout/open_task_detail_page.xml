@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/open_task_title_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Einkaufen für Dieter"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/open_task_name_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Name:"
+
+                app:layout_constraintBottom_toTopOf="@id/open_task_name_label"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/open_task_title_label" />
+
+            <EditText
+                android:id="@+id/open_task_name_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hans Wurst"
+
+                app:layout_constraintBottom_toBottomOf="@id/open_task_name_label"
+                app:layout_constraintLeft_toRightOf="@id/open_task_name_label"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/open_task_name_label" />
+
+            <TextView
+                android:id="@+id/open_task_street_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Straße"
+
+                app:layout_constraintBottom_toTopOf="@id/open_task_description_label"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/open_task_name_label" />
+
+            <EditText
+                android:id="@+id/open_task_street_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Klostergasse 7"
+
+                app:layout_constraintBottom_toBottomOf="@id/open_task_street_label"
+                app:layout_constraintLeft_toRightOf="@id/open_task_street_label"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/open_task_street_label" />
+
+            <TextView
+                android:id="@+id/open_task_description_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beschreibung:"
+
+                app:layout_constraintBottom_toTopOf="@id/open_task_description_field"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/open_task_street_label" />
+
+            <EditText
+                android:id="@+id/open_task_description_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="10"
+                android:maxLines="50"
+                android:text="Irgendeine Beschreibung......"
+
+                app:layout_constraintBottom_toTopOf="@id/open_task_accept_task_button"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/open_task_description_label" />
+
+            <Button
+                android:id="@+id/open_task_accept_task_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Annehmen"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/open_task_description_field" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

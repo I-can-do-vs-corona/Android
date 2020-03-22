@@ -1,0 +1,2 @@
+rootProject.name='Voitheia'
+include ':app', ':api'
