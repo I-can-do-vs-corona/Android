@@ -23,7 +23,7 @@ enum class RequestStatus(val value: kotlin.String){
 
 
     @Json(name = "Open")
-    open("Open"),
+    `open`("Open"),
 
 
     @Json(name = "Assigned")
